@@ -34,7 +34,7 @@ public class StudentGUI extends JFrame {
 
     JButton btnHome, btnManage;
 
-    // 🔥 label dashboard
+    //  label dashboard
     JLabel totalStudentLabel;
 
     final String FILE_NAME = "data/students.dat";
@@ -193,7 +193,7 @@ public class StudentGUI extends JFrame {
         add(contentPanel, BorderLayout.CENTER);
 
         showData();
-        updateDashboard(); // 🔥 init
+        updateDashboard(); //  init
 
         // ===== SIDEBAR =====
         btnHome.addActionListener(e -> {
@@ -225,7 +225,7 @@ public class StudentGUI extends JFrame {
             list.add(new Student(id,name,dob,classId));
             saveToFile();
             showData();
-            updateDashboard(); // 🔥 realtime
+            updateDashboard(); // realtime
             clear();
         });
 
@@ -236,7 +236,7 @@ public class StudentGUI extends JFrame {
                 list.remove(row);
                 saveToFile();
                 showData();
-                updateDashboard(); // 🔥 realtime
+                updateDashboard(); // realtime
                 clear();
             }
         });
@@ -273,7 +273,7 @@ public class StudentGUI extends JFrame {
         v.setForeground(Color.WHITE);
 
         if(title.contains("Tong SV")){
-            totalStudentLabel = v; // 🔥 bind label
+            totalStudentLabel = v; //  bind label
         }
 
         p.add(t,BorderLayout.NORTH);
